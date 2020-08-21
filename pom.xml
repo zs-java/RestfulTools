@@ -7,10 +7,38 @@
     <groupId>com.xzcoder.tools.restful</groupId>
     <artifactId>RestfulTools</artifactId>
     <version>1.0.0</version>
-    <modules>
-        <module>restful-tools-core</module>
-    </modules>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>restful-tools-core</module>
+        <module>restful-tools-annotation</module>
+        <module>spring-boot-starter-restful-tools</module>
+        <module>restful-tools-common</module>
+        <module>restful-tools-example</module>
+    </modules>
+
+    <properties>
+        <restful.tools.version>1.0.0</restful.tools.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.xzcoder.tools.restful</groupId>
+                <artifactId>restful-tools-common</artifactId>
+                <version>${restful.tools.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xzcoder.tools.restful</groupId>
+                <artifactId>restful-tools-annotation</artifactId>
+                <version>${restful.tools.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xzcoder.tools.restful</groupId>
+                <artifactId>restful-tools-core</artifactId>
+                <version>${restful.tools.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
