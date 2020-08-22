@@ -16,4 +16,9 @@ public class RestfulTools {
         return (T) client;
     }
 
+    public static Object getClient(String className) throws ClassNotFoundException {
+        Class<?> clazz = Class.forName(className);
+        return Proxy.newProxyInstance(clazz.getClassLoader(), new Class[]{clazz}, new RestApiInvocationHandler());
+    }
+
 }

@@ -19,6 +19,7 @@
 
     <properties>
         <restful.tools.version>1.0.0</restful.tools.version>
+        <apache.http.version>4.5.5</apache.http.version>
     </properties>
 
     <dependencyManagement>
@@ -37,6 +38,11 @@
                 <groupId>com.xzcoder.tools.restful</groupId>
                 <artifactId>restful-tools-core</artifactId>
                 <version>${restful.tools.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${apache.http.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

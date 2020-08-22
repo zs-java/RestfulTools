@@ -11,5 +11,12 @@
 
     <artifactId>restful-tools-java-example</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.xzcoder.tools.restful</groupId>
+            <artifactId>restful-tools-core</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

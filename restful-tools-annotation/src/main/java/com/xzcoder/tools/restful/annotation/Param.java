@@ -13,4 +13,6 @@ public @interface Param {
 
     String value();
 
+    boolean require() default true;
+
 }

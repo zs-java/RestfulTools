@@ -10,6 +10,29 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>restful-tools-core</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.xzcoder.tools.restful</groupId>
+            <artifactId>restful-tools-annotation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xzcoder.tools.restful</groupId>
+            <artifactId>restful-tools-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${google.guava.version}</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -22,17 +45,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.xzcoder.tools.restful</groupId>
-            <artifactId>restful-tools-annotation</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.xzcoder.tools.restful</groupId>
-            <artifactId>restful-tools-common</artifactId>
-        </dependency>
-    </dependencies>
-
 
 </project>
